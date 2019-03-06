@@ -1,0 +1,25 @@
+<section class="text-center mt-5">
+  <h1 style="color:#e50914; font-weight:bold; font-size:3rem;">
+    🎬 {{title}}
+  </h1>
+
+  {{!-- Si el usuario está logueado --}}
+  {{#if user}}
+    <p style="font-size:1.2rem; color:#444;">
+      🍿 Bienvenido de nuevo, <strong>{{user.username}}</strong>  
+    </p>
+    <div class="mt-4">
+      <a class="btn btn-danger btn-lg mx-2" href="/private-page">Página Privada</a>
+      <a class="btn btn-outline-dark btn-lg mx-2" href="/logout">Cerrar Sesión</a>
+    </div>
+  {{!-- Si NO hay usuario logueado --}}
+  {{else}}
+    <p style="font-size:1.2rem; color:#444;">
+      Inicia sesión para acceder a todas las películas 🎟️
+    </p>
+    <div class="mt-4">
+      <a class="btn btn-warning btn-lg mx-2" href="/signup">Registrarse</a>
+      <a class="btn btn-primary btn-lg mx-2" href="/login">Iniciar Sesión</a>
+    </div>
+  {{/if}}
+</section>

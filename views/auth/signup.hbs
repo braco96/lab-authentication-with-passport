@@ -1,0 +1,17 @@
+<!-- Formulario de registro de nuevos usuarios -->
+<form action="/signup" method="POST">
+  <!-- Campo para el nombre de usuario -->
+  <label for="username">Usuario:</label>
+  <input type="text" id="username" name="username" />
+
+  <!-- Campo para la contraseña -->
+  <label for="password">Contraseña:</label>
+  <input type="password" id="password" name="password" />
+
+  <button type="submit">Crear cuenta</button>
+</form>
+
+{{#if errorMessage}}
+  <!-- Mostramos mensajes de error si existen -->
+  <p>{{errorMessage}}</p>
+{{/if}}

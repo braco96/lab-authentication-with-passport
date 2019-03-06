@@ -1,0 +1,29 @@
+{
+  "name": "auth-with-passport",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "cross-env DEBUG=auth-with-passport:* nodemon ./bin/www",
+    "dev-windows": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.0",
+    "mongoose": "^6.1.2",
+    "morgan": "^1.9.1",
+    "serve-favicon": "^2.5.0",
+    "express-session": "^1.17.3",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "bcryptjs": "^2.4.3",
+    "connect-mongo": "^4.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "cross-env": "^7.0.3"
+  }
+}
